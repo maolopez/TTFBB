@@ -1,0 +1,192 @@
+C02X75D5JG5H:~ YourUsername$ ./time_to_fix_broken_build_calc.sh 
++ export http_proxy=http://pproxy.JencoMart.com:8080
++ http_proxy=http://pproxy.JencoMart.com:8080
++ export https_proxy=http://pproxy.JencoMart.com:8080
++ https_proxy=http://pproxy.JencoMart.com:8080
+++ curl -sk https://jenkins-Dev-gcp.apps.c1-ocp-dc1.DevJencoMart.com/job/Dev-gcp/job/Test/lastSuccessfulBuild/api
+/json --user 'YourUsername:YourPassword'
+++ /usr/local/bin/jq '."id",."duration",."timestamp"'
++ SUCCESSFUL_BUILD_STRING='"12418"
+46
+1563995340849'
+++ echo '"12418"' 46 1563995340849
+++ sed 's/ /-/g'
++ ssafename='"12418"-46-1563995340849'
+++ echo '"12418"-46-1563995340849'
+++ awk '{split($0,a,"-"); print a[1]}'
++ SBUILDNUMBER='"12418"'
++ SBUILDNUMBER='"12418'
++ SBUILDNUMBER=12418
+++ echo '"12418"-46-1563995340849'
+++ awk '{split($0,a,"-"); print a[2]}'
++ SDURATION=46
+++ echo '"12418"-46-1563995340849'
+++ awk '{split($0,a,"-"); print a[3]}'
++ STIMESTAMP=1563995340849
++ BUILDNUMBER=12418
+++ /usr/local/bin/jq '."result"'
+++ curl -sk https://jenkins-Dev-gcp.apps.c1-ocp-dc1.DevJencoMart.com/job/Dev-gcp/job/Test/12418/api/json --user '
+YourUsername:YourPassword'
++ SUCCESS_BUILD_STRING_RESULT='"SUCCESS"'
++ SUCCESS_BUILD_STRING_RESULT='"SUCCESS'
++ SUCCESS_BUILD_STRING_RESULT=SUCCESS
++ '[' SUCCESS = SUCCESS ']'
+++ curl -sk https://jenkins-Dev-gcp.apps.c1-ocp-dc1.DevJencoMart.com/job/Dev-gcp/job/Test/12418/api/json --user '
+YourUsername:YourPassword'
+++ /usr/local/bin/jq '."id",."duration",."timestamp"'
++ SUCCESS_BUILD_STRING='"12418"
+46
+1563995340849'
+++ echo '"12418"' 46 1563995340849
+++ sed 's/ /-/g'
++ s2safename='"12418"-46-1563995340849'
+++ echo '"12418"-46-1563995340849'
+++ awk '{split($0,a,"-"); print a[1]}'
++ S2BUILDNUMBER='"12418"'
++ S2BUILDNUMBER='"12418'
++ S2BUILDNUMBER=12418
+++ echo '"12418"-46-1563995340849'
+++ awk '{split($0,a,"-"); print a[2]}'
++ S2DURATION=46
+++ echo '"12418"-46-1563995340849'
+++ awk '{split($0,a,"-"); print a[3]}'
++ STIMESTAMP=1563995340849
+++ expr 12418 - 1
++ BUILDNUMBER=12417
+++ /usr/local/bin/jq '."result"'
+++ curl -sk https://jenkins-Dev-gcp.apps.c1-ocp-dc1.DevJencoMart.com/job/Dev-gcp/job/Test/12417/api/json --user 'YourUsername:YourPassword'
++ SUCCESS_BUILD_STRING_RESULT='"SUCCESS"'
++ SUCCESS_BUILD_STRING_RESULT='"SUCCESS'
++ SUCCESS_BUILD_STRING_RESULT=SUCCESS
++ '[' SUCCESS = SUCCESS ']'
+++ curl -sk https://jenkins-Dev-gcp.apps.c1-ocp-dc1.DevJencoMart.com/job/Dev-gcp/job/Test/12417/api/json --user 'YourUsername:YourPassword'
+++ /usr/local/bin/jq '."id",."duration",."timestamp"'
++ SUCCESS_BUILD_STRING='"12417"
+40
+1563995040849'
+++ echo '"12417"' 40 1563995040849
+++ sed 's/ /-/g'
++ s2safename='"12417"-40-1563995040849'
+++ echo '"12417"-40-1563995040849'
+++ awk '{split($0,a,"-"); print a[1]}'
++ S2BUILDNUMBER='"12417"'
++ S2BUILDNUMBER='"12417'
++ S2BUILDNUMBER=12417
+++ echo '"12417"-40-1563995040849'
+++ awk '{split($0,a,"-"); print a[2]}'
++ S2DURATION=40
+++ echo '"12417"-40-1563995040849'
+++ awk '{split($0,a,"-"); print a[3]}'
++ STIMESTAMP=1563995040849
+++ expr 12417 - 1
++ BUILDNUMBER=12416
+++ curl -sk https://jenkins-Dev-gcp.apps.c1-ocp-dc1.DevJencoMart.com/job/Dev-gcp/job/Test/12416/api/json --user 'YourUsername:YourPassword'
+++ /usr/local/bin/jq '."result"'
++ SUCCESS_BUILD_STRING_RESULT='"FAILURE"'
++ SUCCESS_BUILD_STRING_RESULT='"FAILURE'
++ SUCCESS_BUILD_STRING_RESULT=FAILURE
++ '[' FAILURE = SUCCESS ']'
+++ date '+1563995040849: %Y-%m-%d%nT:%H:%M:%S'
++ RSDATESTAMP='1563995040849: 2019-07-24
+T:15:10:13'
+++ echo 1563995040849: 2019-07-24 T:15:10:13
++ RSTIMESTAMP='1563995040849: 2019-07-24 T:15:10:13'
+++ echo
+++ awk '{print $2}'
++ RSDATESTAMP=
+++ echo 1563995040849: 2019-07-24 T:15:10:13
+++ awk -F T: '{print $2}'
++ RSTIMESTAMP=15:10:13
+++ curl -sk https://jenkins-Dev-gcp.apps.c1-ocp-dc1.DevJencoMart.com/job/Dev-gcp/job/Test/lastFailedBuild/api/json --user 'YourUsername:YourPassword'
+++ /usr/local/bin/jq '."id",."duration",."timestamp"'
++ LAST_FAILED_BUILD_STRING='"12416"
+58
+1563994740849'
+++ echo '"12416"' 58 1563994740849
+++ sed 's/ /-/g'
++ ffsafename='"12416"-58-1563994740849'
+++ echo '"12416"-58-1563994740849'
+++ awk '{split($0,a,"-"); print a[1]}'
++ FFBUILDNUMBER='"12416"'
++ FFBUILDNUMBER='"12416'
++ FFBUILDNUMBER=12416
+++ echo '"12416"-58-1563994740849'
+++ awk '{split($0,a,"-"); print a[2]}'
++ FFDURATION=58
+++ echo '"12416"-58-1563994740849'
+++ awk '{split($0,a,"-"); print a[3]}'
++ FFTIMESTAMP=1563994740849
+++ date '+1563994740849: %Y-%m-%d%nT:%H:%M:%S'
++ RFFDATESTAMP='1563994740849: 2019-07-24
+T:15:10:17'
+++ echo 1563994740849: 2019-07-24 T:15:10:17
++ RFFTIMESTAMP='1563994740849: 2019-07-24 T:15:10:17'
+++ echo 1563994740849: 2019-07-24 T:15:10:17
+++ awk '{print $2}'
++ RFFDATESTAMP=2019-07-24
+++ echo 1563994740849: 2019-07-24 T:15:10:17
+++ awk -F T: '{print $2}'
++ RFFTIMESTAMP=15:10:17
++ [[ 1563995040849 -lt 1563994740849 ]]
++ echo 'LATEST BUILD IS SUCCESSFUL!'
+LATEST BUILD IS SUCCESSFUL!
++ BUILDNUMBER=12416
+++ curl -sk https://jenkins-Dev-gcp.apps.c1-ocp-dc1.DevJencoMart.com/job/Dev-gcp/job/Test/12416/api/json --user 'YourUsername:YourPassword'
+++ /usr/local/bin/jq '."result"'
++ FAILED_BUILD_STRING_RESULT='"FAILURE"'
++ FAILED_BUILD_STRING_RESULT='"FAILURE'
++ FAILED_BUILD_STRING_RESULT=FAILURE
++ '[' FAILURE = FAILURE ']'
+++ curl -sk https://jenkins-Dev-gcp.apps.c1-ocp-dc1.DevJencoMart.com/job/Dev-gcp/job/Test/12416/api/json --user 'YourUsername:YourPassword'
+++ /usr/local/bin/jq '."id",."duration",."timestamp"'
++ FAILED_BUILD_STRING='"12416"
+58
+1563994740849'
+++ echo '"12416"' 58 1563994740849
+++ sed 's/ /-/g'
++ fsafename='"12416"-58-1563994740849'
+++ echo '"12416"-58-1563994740849'
+++ awk '{split($0,a,"-"); print a[1]}'
++ FBUILDNUMBER='"12416"'
++ FBUILDNUMBER='"12416'
++ FBUILDNUMBER=12416
+++ echo '"12416"-58-1563994740849'
+++ awk '{split($0,a,"-"); print a[2]}'
++ FDURATION=58
+++ echo '"12416"-58-1563994740849'
+++ awk '{split($0,a,"-"); print a[3]}'
++ FTIMESTAMP=1563994740849
+++ expr 12416 - 1
++ BUILDNUMBER=12415
+++ curl -sk https://jenkins-Dev-gcp.apps.c1-ocp-dc1.DevJencoMart.com/job/Dev-gcp/job/Test/12415/api/json --user 'YourUsername:YourPassword'
+++ /usr/local/bin/jq '."result"'
++ FAILED_BUILD_STRING_RESULT='"SUCCESS"'
++ FAILED_BUILD_STRING_RESULT='"SUCCESS'
++ FAILED_BUILD_STRING_RESULT=SUCCESS
++ '[' SUCCESS = FAILURE ']'
+++ date '+1563994740849: %Y-%m-%d%nT:%H:%M:%S'
++ RFDATESTAMP='1563994740849: 2019-07-24
+T:15:10:19'
+++ echo 1563994740849: 2019-07-24 T:15:10:19
++ RFTIMESTAMP='1563994740849: 2019-07-24 T:15:10:19'
+++ echo 1563994740849: 2019-07-24 T:15:10:19
+++ awk '{print $2}'
++ RFDATESTAMP=2019-07-24
+++ echo 1563994740849: 2019-07-24 T:15:10:19
+++ awk -F T: '{print $2}'
++ RFTIMESTAMP=15:10:19
++ echo 'The latest Successful Build was Build Number: '\''12418'\'', Duration: '\''46'\'', Date: '\'''\'', Time: '\''15:10:13'\'' '
+The latest Successful Build was Build Number: '12418', Duration: '46', Date: '', Time: '15:10:13' 
++ echo 'The latest Failed Build was Build Number: '\''12416'\'', Duration: '\''58'\'', Date: '\''2019-07-24'\'', Time: '\''15:10:17'\'''
+The latest Failed Build was Build Number: '12416', Duration: '58', Date: '2019-07-24', Time: '15:10:17'
++ echo 'The first failure before the last Failed Build was Build Number: '\''12416'\'', Duration: '\''58'\'', Date: '\''2019-07-24'\'', Time: '\''15:10:19'\'''
+The first failure before the last Failed Build was Build Number: '12416', Duration: '58', Date: '2019-07-24', Time: '15:10:19'
+++ expr 1563995040849 - 1563994740849
++ TIME_TO_FIX_A_BROKEN_BUILD_RAW=300000
+++ echo 300
++ TIME_TO_FIX_A_BROKEN_BUILD=300
++ echo 'The Time to Fix a Broken Build is '\''300'\'' seconds'
+The Time to Fix a Broken Build is '300' seconds
++ exit
+C02X75D5JG5H:~ YourUsername$
+
